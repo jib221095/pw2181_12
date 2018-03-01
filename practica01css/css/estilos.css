@@ -1,0 +1,46 @@
+body{
+	border: 1px solid blue;
+	/*indica la letras que se muestra en nuestra pagina se pone para que el ususario no puede cambiar el tamaño de la pagina
+	16 es el estandar */
+	font-size: 16px;
+	/*centrar la caja donde esta el marco azul */
+	margin: 0 auto;
+	max-width: 1024px;
+}
+/*no es etiqueta por eso se pone entre llaves*/
+header nav form{
+	/*mover a la derecha solo se usa cuando esta dentro de una caja en este momento es el nav*/
+	float: right;
+/* moverlo hacia arriva */
+	margin-top: -35px;
+
+
+}
+header{
+	background: #B3D8EB;
+}
+/*elementos del menu asi estan ocupamos un display inlune-block para acomodarlos*/
+header nav ul li {
+	/*cambiar color de letra */
+	color: white;
+	/*separar las letras con el margin a la derecha*/
+	margin-right: 30px;
+	display: inline-block;
+
+}
+
+/*la barra azul es el nav*/
+header nav{
+	background: #0E6CB0
+    border-radius: 5px;
+    margin: 0 auto;
+
+	padding: 2px 0px;
+	width: 99%;
+
+}
+
+/*poner el logo html5 arribita */
+#logo {
+	margin-top: -150px;
+}
