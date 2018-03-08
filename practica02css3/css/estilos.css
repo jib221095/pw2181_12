@@ -1,0 +1,22 @@
+body{
+	font-size: 16px; /*1em*/
+    margin: 0 auto;
+	max-width: 1078px;
+	min-width: 1098px;
+}
+header input{
+	float:right; 
+	margin-right: -200px;
+	position: relative;
+}
+/*si no pongo los # dentro del css no funcionara*/
+#granthams{
+	margin-top: 25px;/*moverlo hacia arriva*/
+	margin-left: 25px;/*moverlo hacia la derecha(es contrario)*/
+
+}
+/*como es un id lleva el gato ,aqui movere la imagen de la mancha de pintura ala derecha */
+#paint{
+	float: right;
+
+}
