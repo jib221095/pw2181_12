@@ -9,6 +9,26 @@ header input{
 	margin-right: -200px;
 	position: relative;
 }
+header nav{
+	margin-left: 220px;
+}
+header nav ul li{
+	border-bottom: 1px solid #DBDCE0;/*poner las rayas de abajo por que no era subrayado*/
+	color: #DBDCE0;
+	display: inline-block;
+	font-size: 1.8em;
+	margin-right: 15px;/*separar el texto*/
+	/*text-decoration: underline;/*es para subrayado*/
+	padding-bottom: 2px;/*separar un poco el texto hacia arriba */
+
+
+}
+#bgoffer{
+	left: -35px;
+	position: relative; /*cuando se le pone relative no ocupas la palabra margin es simplemente left
+	top, es para mover la imagen sin mover las demas cosas que seria la caja , no le estorba el elemento*/
+	top: -410px;
+}
 /*si no pongo los # dentro del css no funcionara*/
 #granthams{
 	margin-top: 25px;/*moverlo hacia arriva*/
@@ -19,4 +39,46 @@ header input{
 #paint{
 	float: right;
 
+}
+#primerseccion{
+	height: 318px; /*alto de la imagen */
+	margin-top: 60px;
+}
+#primerseccion article{
+	display: inline-block;/*con esto lo ponemos uno a un lado del otro no cupo moveremos la primer seccion hacia abajo*/
+	vertical-align: top;
+}
+#secc01art01{
+	margin-left: 30px;
+	width: 60%; /*no deben sumar el 100% */
+
+
+}
+#secc01art02{
+	margin-left: 50px;
+
+	width: 30%;
+}
+#secc01art02 ul{
+list-style: none;
+}
+#secc01art02 ul li:before{
+	color: #f9d5e6;
+	content: "• ";
+}
+#segundaseccion article{
+	text-align: right;
+	padding-right: 122px; /*mover a la izquierda , este dentro de la misma caja aqui muevo el numero de tel*/
+}
+.colorrosa{
+	color: #FF0099
+}
+.letramediana{
+	font-size: 2em;
+}
+.nito{
+	font-weight: bold;
+}
+.letragrande{
+	font-size: 3.5em;
 }
