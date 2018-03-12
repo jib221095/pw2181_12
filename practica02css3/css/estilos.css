@@ -48,6 +48,7 @@ header nav ul li{
 	display: inline-block;/*con esto lo ponemos uno a un lado del otro no cupo moveremos la primer seccion hacia abajo*/
 	vertical-align: top;
 }
+
 #secc01art01{
 	margin-left: 30px;
 	width: 60%; /*no deben sumar el 100% */
@@ -70,8 +71,35 @@ list-style: none;
 	text-align: right;
 	padding-right: 122px; /*mover a la izquierda , este dentro de la misma caja aqui muevo el numero de tel*/
 }
+#terceraseccion article{
+	display: inline-block;
+	width: 23%;/*son 4 secciones se deviden entre 100 pero no puede ser 100*/
+	vertical-align: top;
+	margin-right: 4px;
+
+	
+}
+#terceraseccion article img{
+	/*aleneacion vertical*/
+	vertical-align: middle; /*estamos controlando el texto que va a un lado de la imagen se controla desde la misma imagen */
+}
+
+#terceraseccion article input{
+	border-radius: 5px;
+}
+
+#terceraseccion article input[type="button"]{
+	background: #A4CD28;/* */
+	color: white; /*color de letra blanco*/
+}
 .colorrosa{
 	color: #FF0099
+}
+.colorverde{
+ color: #8bc500;
+}
+.colorazul{
+	color: #629ad4;
 }
 .letramediana{
 	font-size: 2em;
