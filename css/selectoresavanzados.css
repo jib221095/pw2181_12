@@ -1,0 +1,23 @@
+img[alt]{
+
+	border: 5px solid blue ;
+}
+
+img[src="img/logo.png"]{
+
+	width: 400px;
+}
+/**/
+img[src*="mg/"]{
+	width: 1000px;
+}
+/*el caracter ~ indica que estos selectores estan separados por espacio */
+article[class~="resaltado"]{
+	border: 1px dashed blue;
+}
+article[class~="archivo"]{
+	border: 1px dashed red;
+}
+article[class~="ingles"]{
+	border: 1px dashed green;
+}
