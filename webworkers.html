@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>webWorkers HTML5</title>
+</head>
+<body>
+
+	<p>Contar numeros <div id="resultado"></div></p>
+	<button onclick="iniciaWorker()">Iniciar</button>
+	<button onclick="pararWorker()">detener</button>
+
+	<p>Contar numeros <div id="resultado2"></div></p>
+	<button onclick="iniciaWorker2()">Iniciar</button>
+	<button onclick="pararWorker2()">detener</button>
+
+	<script >
+		var w1,w2;
+		function iniciaWorker(){
+			//preguntar si soporta wokers.
+			if(typeof (Worker) != "undefined"){
+				if(typeof(w1) == "undefined"){
+					w1 = new Worker("demoWoker.js");
+					w1.onmessage = function(event){
+						document.getElementById('resultado').innerHTML = event.data;
+					}
+		}
+	}else {
+		alert("el navegador no soporta wokers");
+	}
+}
+
+
+   function pararWorker(){
+   	w1.terminate();
+   	w1 = undefined;
+   }
+
+
+
+   function iniciaWorker2(){
+			//preguntar si soporta wokers.
+			if(typeof (Worker) != "undefined"){
+				if(typeof(w2) == "undefined"){
+					w2 = new Worker("demoWoker.js");
+					w2.onmessage = function(event){
+						document.getElementById('resultado2').innerHTML = event.data;
+					}
+		}
+	}else {
+		alert("el navegador no soporta wokers");
+	}
+}
+
+
+   function pararWorker2(){
+   	w2.terminate();
+   	w2 = undefined;
+   }
+	</script>
+	
+</body>
+</html>
