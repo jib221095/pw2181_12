@@ -1,0 +1,27 @@
+{
+  "name": "listadousuarios",
+  "version": "1.0.0",
+  "description": "Listado de usuarios de randomuser y PDF",
+  "main": "main.js",
+  "scripts": {
+  	"start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Listado",
+    "usuarios",
+    "random",
+    "user"
+  ],
+  "author": "jaime ibarra",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^2.0.0"
+  },
+  "devDependencies": {
+  	 "electron": "^2.0.0",
+    "electron-require": "^0.3.0",
+    "jquery": "^3.3.1",
+    "package": "^1.0.1"
+  }
+}
