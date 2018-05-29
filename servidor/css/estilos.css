@@ -1,13 +1,19 @@
 body{
-	background: #BBBBBB
-	font-size 16px;
+
+	background: white;
+	font-size: 16px;
 	margin: 0 auto;
 	max-width: 1024px;
-}
-#secInicio{
- 
- margin: o auto;
- margin-top: 50px;
- width: 350px;
 
 }
+#frmUsuarios{
+	display: none;
+}
+#secInicio,#frmUsuarios{
+
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 350px;
+
+}
+
